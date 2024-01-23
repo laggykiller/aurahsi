@@ -12,7 +12,7 @@ You may also pass `window` query to view HSI in other time period: `localhost:80
 
 Valid `window` values are: `MAX`, `5Y`, `1Y`, `YTD`, `6M`, `1M`, `5D`, `1D`
 
-## Generate gif directly wihtout starting server
+## Generate gif directly without starting server
 ``` python
 from app import ImageOperation
 
