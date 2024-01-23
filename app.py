@@ -265,7 +265,7 @@ def hsi_gif():
     window = request.args.get("window")
     img = im_op.get_img(window=window)
 
-    return send_file(io.BytesIO(img), mimetype="image/gif", cache_timeout=0)
+    return send_file(io.BytesIO(img), mimetype="image/gif")
 
 @app.after_request
 def add_header(r):
