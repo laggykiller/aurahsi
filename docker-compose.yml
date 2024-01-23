@@ -1,8 +1,9 @@
 version: '3.6'
 services:
   aurahsi:
-    image: aurahsi
-    build: .
+    image: ghcr.io/laggykiller/aurahsi:latest # Comment out for building locally
+    # image: aurahsi # Uncomment for building locally
+    # build: . # Uncomment for building locally
     volumes:
       - ./app.py:/app/app.py
       - ./assets:/app/assets
