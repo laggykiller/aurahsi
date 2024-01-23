@@ -12,6 +12,8 @@ RUN curl -O -L https://github.com/mozilla/geckodriver/releases/download/v${FIREF
     mv geckodriver /usr/local/bin
 
 COPY ./requirements.txt /app/requirements.txt
+COPY ./assets /app/assets
+COPY ./app.py /app/app.py
 RUN pip3 install -r /app/requirements.txt
 
 RUN apt clean autoclean && \

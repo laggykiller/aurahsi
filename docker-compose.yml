@@ -5,8 +5,6 @@ services:
     # image: aurahsi # Uncomment for building locally
     # build: . # Uncomment for building locally
     volumes:
-      - ./app.py:/app/app.py
-      - ./assets:/app/assets
       - /dev/shm:/dev/shm
     environment:
       - TZ=Asia/Hong_Kong
