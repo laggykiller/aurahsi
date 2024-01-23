@@ -3,7 +3,7 @@ Reports up-to-date HSI by Frieren & Aura GIF
 
 https://hsi.auraria.org/hsi.gif?window=1D
 
-## 
+## Start server
 To use: `docker compose up`
 
 To view the gif, visit `localhost:8080/hsi.gif`
