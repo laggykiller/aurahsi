@@ -1,7 +1,7 @@
 # aurahsi
 Reports up-to-date HSI by Frieren & Aura GIF
 
-![hsi.gif](https://hsi.auraria.org/hsi.gif?window=1D)
+![<img src="hsi.gif?window=1D">](https://hsi.auraria.org/hsi.gif?window=1D)
 
 ## 
 To use: `docker compose up`
