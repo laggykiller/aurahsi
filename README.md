@@ -1,6 +1,9 @@
 # aurahsi
 Reports up-to-date HSI by Frieren & Aura GIF
 
+![hsi.gif](https://hsi.auraria.org/hsi.gif?window=1D)
+
+## 
 To use: `docker compose up`
 
 To view the gif, visit `localhost:8080/hsi.gif`
@@ -9,7 +12,7 @@ You may also pass `window` query to view HSI in other time period: `localhost:80
 
 Valid `window` values are: `MAX`, `5Y`, `1Y`, `YTD`, `6M`, `1M`, `5D`, `1D`
 
-If you want to generate gif directly wihtout starting server:
+## Generate gif directly wihtout starting server
 ``` python
 from app import ImageOperation
 
@@ -20,6 +23,5 @@ with open("hsi.gif", "wb+") as f:
 im_op.cleanup()
 ```
 
-![hsi.gif](https://hsi.auraria.org/hsi.gif)
-
-Credits for original GIF creator: https://lih.kg/BohkeBX
+## Credits
+Original GIF creator: https://lih.kg/BohkeBX
