@@ -265,7 +265,7 @@ def hsi_gif():
     window = request.args.get("window")
     img = im_op.get_img(window=window)
 
-    return send_file(io.BytesIO(img), mimetype="image/gif")
+    return send_file(io.BytesIO(img), mimetype="image/gif", cache_timeout=0)
 
 if __name__ == "__main__":
     im_op = ImageOperation()
