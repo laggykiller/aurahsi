@@ -1,0 +1,14 @@
+version: '3.6'
+services:
+  aurahsi:
+    image: aurahsi
+    build: .
+    volumes:
+      - ./app.py:/app/app.py
+      - ./assets:/app/assets
+      - /dev/shm:/dev/shm
+    environment:
+      - TZ=Asia/Hong_Kong
+    restart: unless-stopped
+    ports:
+      - 8080:80
